@@ -9,7 +9,7 @@ import pandas as pd
 
 model_svm = joblib.load('model_predict/svm.pkl')
 model_lgbm = joblib.load('model_predict/lgbm.pkl')
-model_catboost = joblib.load('model_predcit/catboost.pkl')
+model_catboost = joblib.load('model_predict/catboost.pkl')
 tfidf = joblib.load( 'model_predict/tfidf.pkl')
 
 app = Flask(__name__)
