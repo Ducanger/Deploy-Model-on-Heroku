@@ -1,0 +1,116 @@
+:root {
+    --green : #2ea44f;
+    --green-hover: #2c974b;
+    --white: #ffffff;
+    --black: #24292e;
+}
+
+body, h1, h2, h3, h4, h5, h6, label {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+    font-size: 45; 
+    color: #24292e; 
+    font-weight: 500;
+}
+
+label{
+    font-size: 20; 
+    color: #24292e; 
+    font-weight: 500;
+}
+
+textarea {
+    width: 60%;
+    height: 250px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: 2px solid var(--green);
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    line-height: 20px; 
+    font-weight: 480px;
+    font-family: 'Segoe UI';
+    resize: none;
+    outline: none;
+}    
+
+.button {
+    background-color: var(--green);
+    border-radius: 6px;
+    border: 1px solid #2b9148;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.button:hover {
+    background-color: var(--green-hover);
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+  
+.custom-select select {
+    display: none; 
+}
+  
+.select-selected {
+    background-color: var(--white);
+}
+  
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #4e5256 transparent transparent transparent;
+}
+  
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #4e5256 transparent;
+    top: 7px;
+}
+  
+.select-items div,.select-selected {
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    color: var(--black);
+    padding: 8px 16px;
+    border: 1px solid #d2d4d5;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  
+.select-items {
+    position: absolute;
+    background-color: var(--white);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: #f6f8fa;
+}

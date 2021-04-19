@@ -1,1 +1,1 @@
-# Deploy-ML-model-on-heroku
+# Deploy-Fake-News-Detection

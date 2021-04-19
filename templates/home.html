@@ -1,0 +1,39 @@
+
+<html>   
+    <head>
+        <title>Fake News Detection</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="static/img/favicon.png" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="static/css/home.css"></link>  
+    </head>
+
+    <body>
+
+        <center>
+
+        <br> 
+
+        <h1> Fake News Detetion </h1>
+            
+        <form name="form" method="POST" action="{{url_for('home')}}" onsubmit="return validation()" >
+            <textarea id = "input" type="text" name="input" placeholder="Enter Text Here..."></textarea> 
+            <br> <br>
+            <label for="model">Select model</label>
+            <div class="custom-select" style="width:200px;">
+                <select name="model" id="model">
+                    <option value="0">...</option>
+                    <option value="1">Model SVM</option>
+                    <option value="2">Model LightGBM</option>
+                    <option value="3">Model CatBoost</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" class="button" value="Predict"> 
+        </form> 
+
+        </center>
+
+        <script src="static/js/home.js"></script>
+    </body>
+</html>

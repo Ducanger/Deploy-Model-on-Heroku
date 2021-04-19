@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Fake News Detection</title>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="static/img/favicon.png" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="static/css/after.css?version=51">
+    </head>
+
+    <body>
+
+        <center>
+        
+        <br> 
+
+        <h1> Prediction </h1>
+            
+        {%if proba >= 0.4%}
+        <img src='static/img/fake.jpg' alt="fake" width="500" height="325" >
+
+        {%else%}
+        <img src='static/img/real.jpg' alt="real" width="500" height="325" >
+        
+        {%endif%}
+
+        <br> <br> <br>
+
+        <a style="text-decoration: none" href='/' class="button">Back Home</a>
+
+        </center>
+
+    </body>
+</html>
