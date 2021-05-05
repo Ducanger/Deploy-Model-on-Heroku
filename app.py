@@ -8,8 +8,8 @@ import pandas as pd
 #vncorenlp = VnCoreNLP(vncorenlp_file)
 
 model_svm = joblib.load('model_predict/svm.pkl')
-model_lgbm = joblib.load('model_predict/lgbm.pkl')
-model_catboost = joblib.load('model_predict/catboost.pkl')
+#model_lgbm = joblib.load('model_predict/lgbm.pkl')
+#model_catboost = joblib.load('model_predict/catboost.pkl')
 tfidf = joblib.load( 'model_predict/tfidf.pkl')
 
 app = Flask(__name__)
@@ -29,9 +29,9 @@ def home():
     features = tfidf.transform([text])
       
     if request_model == "2":
-        model = model_lgbm
+        model = model_svm
     elif request_model == "3":
-        model = model_catboost
+        model = model_svm
     else:
         model = model_svm
 
