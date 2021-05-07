@@ -1,3 +1,6 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.4.0+cpu 
+torchvision==0.5.0+cpu
 joblib==1.0.0
 lightgbm==3.1.1
 catboost==0.24.4
