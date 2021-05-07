@@ -1,11 +1,7 @@
 from flask import Flask, render_template, request
-#from vncorenlp import VnCoreNLP
 import joblib
 import numpy as np
 import pandas as pd
-
-#vncorenlp_file = r'VnCoreNLP-1.1.1.jar'
-#vncorenlp = VnCoreNLP(vncorenlp_file)
 
 model_svm = joblib.load('model_predict/svm.pkl')
 #model_lgbm = joblib.load('model_predict/lgbm.pkl')
