@@ -22,7 +22,7 @@ def home():
     request_model = request.form['model']
 
     X = word_tokenize(text, format="text")
-    features = tfidf.transform([X])
+    features = tfidf.transform([X]).toarray()
       
     if request_model == "2":
         model = model_lgbm
